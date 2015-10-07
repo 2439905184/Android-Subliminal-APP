@@ -1,0 +1,145 @@
+   <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/back_ground" tools:context=".Home">
+
+<ImageView
+    android:contentDescription="@string/top_layer"
+    android:id="@+id/top_layer"
+    android:layout_width="fill_parent"
+    android:src="@drawable/top_bar"
+    android:layout_alignParentTop="true"
+    android:layout_height="wrap_content" />
+
+<ImageView
+    android:id="@+id/logo"
+    android:src="@drawable/zyia_logo"
+    android:layout_alignTop="@id/top_layer"
+    android:layout_alignBottom="@id/top_layer"
+    android:layout_alignLeft="@id/top_layer"
+    android:layout_marginLeft="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+<ImageView
+    android:id="@+id/top_button"
+    android:src="@drawable/top_button"
+    android:layout_alignTop="@id/top_layer"
+    android:layout_alignBottom="@id/top_layer"
+    android:layout_marginEnd="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_alignRight="@id/top_layer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+
+
+
+
+<RelativeLayout
+    android:layout_below="@+id/top_layer"
+    android:id="@+id/alarmGroup"
+    android:layout_margin="15dp"
+    android:layout_centerInParent="true"
+    android:layout_width="wrap_content"
+android:padding="19dp"
+    android:layout_height="wrap_content">
+       <ToggleButton
+           android:id="@+id/alarm1"
+           android:background="@drawable/check"
+           android:layout_alignParentLeft="true"
+           android:layout_margin="8dp"
+           android:textOn=""
+           android:onClick="alarmSet1"
+           android:textOff=""
+           android:focusable="false"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+       <ToggleButton
+           android:id="@+id/alarm2"
+           android:onClick="alarmSet2"
+           android:background="@drawable/check"
+           android:layout_toRightOf="@+id/alarm1"
+           android:textOn=""
+           android:textOff=""
+
+           android:focusable="false"
+           android:layout_margin="8dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+       <ToggleButton
+           android:id="@+id/alarm3"
+           android:onClick="alarmSet3"
+           android:background="@drawable/check"
+           android:layout_below="@id/alarm1"
+           android:layout_margin="8dp"
+           android:textOn=""
+           android:textOff=""
+           android:focusable="false"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+       <ToggleButton
+           android:id="@+id/alarm4"
+           android:onClick="alarmSet4"
+           android:background="@drawable/check"
+           android:layout_below="@id/alarm2"
+           android:layout_toRightOf="@+id/alarm3"
+           android:textOn=""
+           android:textOff=""
+           android:focusable="false"
+           android:layout_margin="8dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
+
+       <ImageButton
+           android:id="@+id/easySleep"
+           android:background="@drawable/zzzzz"
+           android:layout_centerInParent="true"
+           android:onClick="easySleepAct"
+           android:layout_below="@+id/alarmGroup"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+
+
+
+
+<ImageView
+       android:id="@+id/bottom_layer"
+       android:src="@drawable/footer"
+       android:layout_alignParentBottom="true"
+
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+
+       <ImageView
+           android:id="@+id/bottomButton"
+           android:src="@drawable/footer_button"
+           android:layout_alignTop="@id/bottom_layer"
+           android:layout_alignBottom="@id/bottom_layer"
+           android:layout_marginEnd="5dp"
+           android:layout_marginRight="5dp"
+           android:onClick="settings"
+           android:layout_alignRight="@id/bottom_layer"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+<TextView
+
+    android:id="@+id/messages"
+    android:gravity="center"
+    android:layout_alignTop="@id/bottom_layer"
+    android:layout_marginLeft="5dp"
+    android:textColor="#717d72"
+    android:layout_alignBottom="@id/bottom_layer"
+    android:layout_alignLeft="@id/bottom_layer"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+</RelativeLayout>

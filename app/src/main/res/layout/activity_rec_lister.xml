@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="zyia.alarm.zyia.zyia.RecLister">
+
+    <ImageView
+        android:contentDescription="@string/top_layer"
+        android:id="@+id/top_layer3"
+        android:layout_width="fill_parent"
+        android:src="@drawable/top_bar"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/logo3"
+        android:src="@drawable/zyia_logo"
+        android:layout_alignTop="@id/top_layer3"
+        android:layout_alignBottom="@id/top_layer3"
+        android:layout_alignLeft="@id/top_layer3"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/top_button3"
+        android:src="@drawable/top_button"
+        android:layout_alignTop="@id/top_layer3"
+        android:layout_alignBottom="@id/top_layer3"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignRight="@id/top_layer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+   <ListView
+       android:id="@+id/listX"
+       android:textAlignment="center"
+       android:layout_below="@+id/top_layer3"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       </ListView>
+
+</RelativeLayout>

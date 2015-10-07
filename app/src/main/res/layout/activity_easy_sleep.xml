@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:background="@drawable/back_ground"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:contentDescription="@string/top_layer"
+        android:id="@+id/top_layer_Easy"
+        android:layout_width="fill_parent"
+        android:src="@drawable/top_bar"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/logo_Easy"
+        android:src="@drawable/zyia_logo"
+        android:layout_alignTop="@id/top_layer_Easy"
+        android:layout_alignBottom="@id/top_layer_Easy"
+        android:layout_alignLeft="@id/top_layer_Easy"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/top_button_Easy"
+        android:src="@drawable/top_button"
+        android:layout_alignTop="@id/top_layer_Easy"
+        android:layout_alignBottom="@id/top_layer_Easy"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignRight="@id/top_layer_Easy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ToggleButton
+        android:id="@+id/Easy_Button"
+        android:layout_marginTop="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/top_layer_Easy"
+        android:onClick="easyButton"
+        android:textOff=""
+        android:textOn=""
+        android:background="@drawable/easy"
+        android:focusable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/lineEasy"
+        android:visibility="gone"
+        android:layout_below="@+id/Easy_Button"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    <ImageButton
+        android:id="@+id/plusEasy"
+        android:onClick="plusTime"
+        android:background="@drawable/plus_easy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/musicEasy"
+            android:background="@drawable/music"
+            android:layout_marginTop="18dp"
+            android:onClick="mediaEasy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/speechEasy"
+            android:background="@drawable/text_list"
+            android:layout_marginTop="18dp"
+            android:onClick="textEasy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/circularEasy"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/lineEasy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/easyBrain"
+            android:background="@drawable/brainer"
+            android:layout_width="65dp"
+            android:layout_height="65dp" />
+
+        <ImageButton
+            android:id="@+id/easyAudible"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/easyBrain"
+            android:background="@drawable/audible"
+            android:layout_width="65dp"
+            android:layout_height="65dp" />
+        <ImageButton
+            android:id="@+id/allEasy"
+            android:background="@drawable/both_easy"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/easyAudible"
+            android:layout_width="65dp"
+            android:layout_height="65dp"/>
+
+        <ImageButton
+            android:id="@+id/easyRepeat"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/allEasy"
+            android:layout_below="@+id/easyAudible"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/repeat_easy"
+            android:layout_width="65dp"
+            android:layout_height="65dp" />
+
+        </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/bottom_layer_easy"
+        android:src="@drawable/footer"
+        android:layout_alignParentBottom="true"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/bottomButton_easy"
+        android:src="@drawable/footer_button"
+        android:layout_alignTop="@id/bottom_layer_easy"
+        android:layout_alignBottom="@id/bottom_layer_easy"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:onClick="settingsEasy"
+        android:layout_alignRight="@id/bottom_layer_easy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+
+        android:id="@+id/messagesEasy"
+        android:gravity="center"
+        android:layout_alignTop="@id/bottom_layer_easy"
+        android:layout_marginLeft="5dp"
+        android:textColor="#717d72"
+        android:layout_alignBottom="@id/bottom_layer_easy"
+        android:layout_alignLeft="@id/bottom_layer_easy"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground">
+
+
+    <ImageView
+        android:contentDescription="@string/top_layer"
+        android:id="@+id/top_layer_quote"
+        android:layout_width="fill_parent"
+        android:src="@drawable/top_bar"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/quoteButton"
+        android:layout_below="@id/top_layer_quote"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/confidenceList"
+        android:background="#0C96D7"
+        android:layout_margin="15dp"
+        android:text="SELF-CONFIDENCE"
+        android:textColor="#FFFFFF"
+        android:onClick="quoteFour"
+        android:textSize="17sp"
+        android:alpha="0.6"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+    <Button
+        android:id="@+id/doubtList"
+        android:background="#0C96D7"
+        android:textSize="17sp"
+        android:onClick="quoteThree"
+        android:layout_margin="15dp"
+        android:textColor="#FFFFFF"
+        android:alpha="0.6"
+        android:layout_toRightOf="@+id/confidenceList"
+        android:text="SELF-DOUBT"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+    <Button
+        android:id="@+id/quoteList1"
+        android:background="#0C96D7"
+        android:alpha="0.6"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/confidenceList"
+        android:onClick="quotesOne"
+        android:layout_margin="15dp"
+        android:text="QUOTES-1"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+    <Button
+        android:id="@+id/quoteList2"
+        android:background="#0C96D7"
+        android:textSize="17sp"
+        android:textColor="#FFFFFF"
+        android:alpha="0.6"
+        android:onClick="quotesTwo"
+        android:layout_below="@id/doubtList"
+        android:layout_margin="15dp"
+        android:layout_toRightOf="@+id/quoteList1"
+        android:text="QUOTES-2"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

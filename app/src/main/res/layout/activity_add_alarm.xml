@@ -1,0 +1,193 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@drawable/back_ground"
+    tools:context="zyia.alarm.zyia.zyia.AddAlarm">
+
+    <ImageView
+        android:contentDescription="@string/top_layer"
+        android:id="@+id/top_layer2"
+        android:layout_width="fill_parent"
+        android:src="@drawable/top_bar"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/logo2"
+        android:src="@drawable/zyia_logo"
+        android:layout_alignTop="@id/top_layer2"
+        android:layout_alignBottom="@id/top_layer2"
+        android:layout_alignLeft="@id/top_layer2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/top_button2"
+        android:src="@drawable/top_button"
+        android:layout_alignTop="@id/top_layer2"
+        android:layout_alignBottom="@id/top_layer2"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignRight="@id/top_layer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_below="@id/top_layer2"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:gravity="center"
+
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/calenDate"
+            android:background="@drawable/calen"
+            android:layout_width="50dp"
+            android:onClick="calendarAlarm"
+            android:layout_marginTop="30dp"
+            android:layout_height="50dp" />
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <ImageButton
+            android:id="@+id/timeSet"
+            android:background="@drawable/alarm"
+            android:layout_width="wrap_content"
+            android:onClick="clicker"
+            android:layout_marginTop="14dp"
+
+            android:layout_height="wrap_content" />
+
+            <TextView
+
+                android:id="@+id/timeText"
+                android:gravity="center"
+                android:layout_alignTop="@id/timeSet"
+                android:layout_marginLeft="9dp"
+                android:textColor="#717d72"
+                android:layout_alignBottom="@id/timeSet"
+                android:layout_alignLeft="@id/timeSet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+        </RelativeLayout>
+        <ImageButton
+            android:id="@+id/record"
+            android:background="@drawable/record_new"
+            android:layout_marginTop="14dp"
+            android:onClick="recordActivity"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/recordedMessage"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rec"
+            android:onClick="recMessages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/snooze"
+            android:background="@drawable/snooze"
+            android:layout_below="@+id/mediaButton"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+        <ImageButton
+            android:id="@+id/mediaButton"
+            android:background="@drawable/music"
+            android:layout_marginTop="12dp"
+            android:onClick="mediaClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ToggleButton
+            android:id="@+id/Toggle"
+            android:layout_marginTop="12dp"
+            android:onClick="vibrator"
+            android:textOn=""
+            android:textOff=""
+            android:background="@drawable/vibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/textSpeech"
+            android:layout_marginTop="12dp"
+            android:onClick="convertText"
+            android:background="@drawable/text_spch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/textSpeechList"
+            android:layout_marginTop="12dp"
+            android:onClick="texMessages"
+            android:background="@drawable/text_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:background="@drawable/dismisser"
+            android:layout_marginTop="10dp"
+            android:text="done"
+            android:id="@+id/samplex"
+            android:layout_width="100dp"
+            android:layout_height="65dp" />
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/bottom_layer2"
+        android:src="@drawable/footer"
+        android:layout_alignParentBottom="true"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/setting_button2"
+        android:src="@drawable/footer_button"
+        android:layout_alignTop="@id/bottom_layer2"
+        android:layout_alignBottom="@id/bottom_layer2"
+        android:layout_marginEnd="5dp"
+        android:onClick="layThree"
+        android:layout_marginRight="5dp"
+        android:layout_alignRight="@id/bottom_layer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+
+        android:id="@+id/messages2"
+        android:gravity="center"
+        android:layout_alignTop="@id/bottom_layer2"
+        android:layout_marginLeft="5dp"
+        android:textColor="#717d72"
+        android:layout_alignBottom="@id/bottom_layer2"
+        android:layout_alignLeft="@id/bottom_layer2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

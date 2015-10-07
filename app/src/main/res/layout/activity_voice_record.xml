@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/micImg"
+        android:background="@drawable/micro"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp" />
+
+    <LinearLayout
+        android:layout_below="@+id/micImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+
+
+
+    <ImageButton
+
+        android:id="@+id/recordPlus"
+        android:background="@drawable/recordx"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="90dp" />
+
+        <ToggleButton
+            android:id="@+id/playButton"
+            android:textOff=" "
+            android:textOn=" "
+            android:background="@drawable/recod"
+            android:layout_width="90dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_height="90dp" />
+
+    <ImageButton
+        android:id="@+id/recordStop"
+        android:background="@drawable/recordyy"
+        android:layout_width="80dp"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:layout_height="80dp" />
+
+
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/closeButton"
+        android:background="@drawable/closer"
+        android:onClick="closeAct"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+
+</RelativeLayout>

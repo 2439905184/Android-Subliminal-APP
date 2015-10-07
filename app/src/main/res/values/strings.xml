@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Z-Alarm</string>
+    <string name="fire">set</string>
+    <string name="cancel">cancel fire</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="top_layer">Top layer</string>
+    <string name="alerts">Experience the inner beauty of you with zyia</string>
+    <string name="info">Press the alarm button to customize Alarm. Press the Easy sleep Button to customize according to your sleeping style</string>
+    <string name="title_activity_add_alarm">AddAlarm</string>
+    <string name="title_activity_time__date">Time_Date</string>
+    <string name="title_activity_music">MusicActivity</string>
+    <string name="ok">set</string>
+    <string name="titleText">      none found</string>
+    <string name="kill">okay</string>
+    <string name="rec">Recorded Messages</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title">SPEECH LIST</string>
+    <string name="title_activity_voice_record">VoiceRecord</string>
+    <string name="title_activity_rec_lister">RecLister</string>
+    <string name="title_activity_alarm_launch2">AlarmLaunch2</string>
+    <string name="title_activity_alarm_launch3">AlarmLaunch3</string>
+    <string name="title_activity_alarm_launch4">AlarmLaunch4</string>
+    <string name="title_activity_voice_lister">VoiceLister</string>
+    <string name="title_activity_easy_sleep">EasySleep</string>
+    <string name="title_activity_quote_menu">QuoteMenu</string>
+    <string name="title_activity_quotes1">Quotes1</string>
+    <string name="title_activity_quotes2">Quotes2</string>
+    <string name="title_activity_quote3">quote3</string>
+    <string name="title_activity_quotes4">Quotes4</string>
+    <string name="title_activity_easy_alarm">EasyAlarm</string>
+
+</resources>

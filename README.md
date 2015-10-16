@@ -5,6 +5,6 @@ The purpose of this app is to set subliminal alarms in Android. Messages can be 
 be mixed with Songs and Audios.
 
 
-![alt tag](http://s19.postimg.org/fnwwq6943/layout1.jpg)
+![alt tag](http://s19.postimg.org/hdb1vcv4z/abc.jpg)
 
 ![alt tag](http://s19.postimg.org/hd5zy8otf/layout2.jpg)

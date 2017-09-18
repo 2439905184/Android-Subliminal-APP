@@ -21,7 +21,7 @@ The gradle file contains all the required libraries and configurations that are 
 
 ## License
 
-    Copyright 2015 Emin Yahyayev
+    Copyright 2015 Shaheen A Kader
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

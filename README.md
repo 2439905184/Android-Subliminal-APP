@@ -11,7 +11,8 @@ This is a fully functional app I made from scratch to set subliminal mind tuning
 ## Work with Source code
 The gradle file contains all the required libraries and configurations that are necessary to build the app, if you are using the latest version of Android Studio and build tools, you may need to optimize the app for it in the `build.gradle` file.
 
-##Screens
+## Screens
+
 
 ![alt tag](http://s19.postimg.org/hdb1vcv4z/abc.jpg)
 
